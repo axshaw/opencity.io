@@ -1,0 +1,686 @@
+/* 
+    TITEL       : Eazy - Landing Page 
+    CREATED     : August 7, 2014
+    AUTHOR      : themeshuttle, agez
+    DESCRIPTION : Simple Business / Agency / Portfolio / Designer Landing Page - Free Weekly Updates!
+       
+*/
+@charset "utf-8";
+
+body{
+	font-family:'Open Sans',Arial,sans-serif;
+	background:#FFF;
+	font-weight:300;
+	height:100%;
+	margin:0;
+	padding:0;
+	color:#94a3a8;
+	}
+	
+strong,b{
+	font-weight:600;
+	}
+
+h1{font-size:50px;line-height:60px;margin:25px 0;}
+h2{font-size:40px;font-weight:600;margin:15px 0;}
+h3{font-size:20px;margin:10px 0;font-weight:600;}
+h4{font-size:20px;margin:10px 0;}
+h5{font-size:28px;font-weight:600;margin:15px 0;color:#384047;}
+h6{font-size:16px;font-weight:600;margin:10px 0;color:#384047;}
+
+a{color:#94a3a8;}
+a:hover,a:focus{color:#94a3a8;text-decoration:none;}
+i {
+    padding:0 7px;
+}
+.form-control{
+	border-radius:3px;
+	-webkit-box-shadow:none;
+	box-shadow:none;border:0;
+	}
+	
+.input-lg{height:55px;}
+
+.btn-lg,.btn-group-lg>.btn{
+	padding:10px 28px;
+	height:52px;
+	}
+.breath{margin:50px auto;}
+
+.highlight{background:#f4f4f4;margin-top:40px;}
+
+.masthead{
+	position:relative;
+	padding:80px 15px;
+	color:#FFF;
+	text-align:center;
+	text-shadow:0 1px 0 rgba(0,0,0,.1);
+	background-color:#6883cc;
+	background-image:url("../images/pic1.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-attachment:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	}
+
+.masthead .container{
+	animation:fadein 2s;
+	-moz-animation:fadein 2s;
+	-webkit-animation:fadein 2s;
+	-o-animation:fadein 2s;
+	}
+
+.logo {
+	padding: 45px 0;
+	text-align:center;
+	
+}
+.logo h1 {
+    font-size:128px;
+}
+.btn-large {
+	font-size:18px;
+	padding:20px 50px;
+	margin:5px 10px;
+}
+.btn-success {
+	background-color: #2ecc71;
+	background-image:none;
+	border: 0;
+	-webkit-box-shadow: 0 3px 0 rgba(2, 154, 67, 1);
+	box-shadow: 0 3px 0 rgba(2, 154, 67, 1);
+	line-height: 1.8;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+	background-color: #29c36a;
+	color:#FFF;
+	border: 0;
+	-webkit-box-shadow: 0 3px 0 rgba(2, 139, 61, 1);
+	box-shadow: 0 3px 0 rgba(2, 139, 61, 1);
+}
+.btn-primary {
+	background-color: #2db6d8;
+	background-image:none;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+	background-color: #209ab8!important;
+	color:#FFF!important;
+}
+.subscribe {
+	padding: 45px 0;
+}
+.alertMsg {
+	float: left;
+	font-size: 14px;
+	display: block;
+	padding: 5px 17px;
+}
+/* Boucing Arrow Animation */
+@keyframes arrowbounce {
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+@-moz-keyframes arrowbounce { /* Firefox */
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+@-webkit-keyframes arrowbounce { /* Safari and Chrome */
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+@-o-keyframes arrowbounce { /* Opera */
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+.scrollto, .scrollto:hover {
+	margin:30px;
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+	width:200px;
+	margin:0 auto;
+}
+.scrollto--arrow {
+	padding:10px;
+}
+.scrollto--arrow img {
+	animation: arrowbounce 1s alternate infinite;
+	-moz-animation: arrowbounce 1s alternate infinite; /* Firefox */
+	-webkit-animation: arrowbounce 1s alternate infinite; /* Safari and Chrome */
+	-o-animation: arrowbounce 1s alternate infinite; /* Opera */
+}
+/*========== 3. HERO IMAGE ==============*/
+
+.section-title {
+	text-align:center;
+	margin-top:60px;
+	margin-bottom:30px;
+}
+.section-title h2 {
+	color:#384047;
+}
+.section-title h4 {
+	color:#94a3a8;
+}
+.heroimg img, .clientlogo img {
+	max-width:100%;
+}
+.headtext {
+    padding:75px 0;
+	}
+/*========== 4. FEATURES ==============*/
+
+.features {
+	margin:25px 0;
+}
+.thumbnail {
+	border:0;
+	text-align:center;
+	-webkit-transition: all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	-o-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+.thumbnail .caption p {
+	color: #94a3a8;
+}
+.thumbnail:hover {
+	-webkit-transform: scale(1.1);
+	transform:scale(1.1);
+	-o-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+}
+
+/*========== 5. TESTIMONIALS ==============*/
+
+.testblock {
+	width:100%;
+	height:auto;
+	padding:20px;
+	background:#FFF;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	position:relative;
+	line-height:28px;
+	font-size:16px;
+}
+.testblock:after {
+	top: 100%;
+	left: 20%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #ffffff;
+	border-width: 15px;
+	margin-left: -15px;
+}
+.clientblock {
+	margin-top:20px;
+	margin-right:10px;
+}
+.clientblock img {
+	float:right;
+	width:68px;
+	height:68px;
+}
+.clientblock p {
+	padding-right:80px;
+	padding-top:13px;
+	text-align:right;
+}
+.clientblock p strong {
+	color:#384047;
+}
+
+/*========== CLIENTS ==============*/
+aside.clients img {
+    margin: 50px auto;
+}
+@media(max-width:767px) {
+    aside.clients {
+        height:500px;
+    }
+
+}
+/*========== CLIENT CAROUSEL ==============*/
+
+.carousel {
+	margin-bottom: 0;
+    height:200px;
+}
+.carousel-control {
+  padding-top:5%;
+  width:2%;
+text-shadow: none;
+opacity: 1;
+filter: alpha(opacity=100);
+color:black;
+}
+.carousel-control.left {
+background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.0001)));
+background-image: -webkit-linear-gradient(left, color-stop(rgba(0,0,0,0.5) 0), color-stop(rgba(0,0,0,0.0001) 100%));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.0001) 100%);
+background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.0001) 100%);
+background-repeat: repeat-x;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+background: none !important; 
+filter: progid:none !important; 
+}
+.carousel-control.right {
+background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0,0,0,0.0001)), to(rgba(0,0,0,0.5)));
+background-image: -webkit-linear-gradient(left, color-stop(rgba(0,0,0,0.0001) 0), color-stop(rgba(0,0,0,0.5) 100%));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.5) 100%);
+background-image: linear-gradient(to right, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.5) 100%);
+background-repeat: repeat-x;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+background: none !important; 
+filter: progid:none !important; 
+}
+.carousel-control:hover, .carousel-control:focus {
+opacity: 1;
+filter: alpha(opacity=100);
+color:black;
+}
+.carousel-control {   
+	height:160px; 
+	color:grey;
+}
+
+.carousel-control.right {
+	height:160px;
+}
+
+.carousel-indicators {
+	top: auto;
+	bottom: 0px;
+}
+
+
+/*========== 6. PORTFOLIO ==============*/
+.portfolio {
+    text-align:center;
+	margin:25px 0;
+}
+/* ---- isotope ---- */
+/* Portfolio Hover Button */
+.view {
+      width: 100%;
+   height: 250px;
+   margin: 10px;
+   float: left;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   cursor: default;
+}
+
+.view .mask, .view .content {
+   width: 100%;
+   height: 250px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view img {
+   display: block;
+   position: relative;
+}
+
+.view a.info {
+   background:url(../images/link.png) center no-repeat;
+   display: inline-block;
+   text-decoration: none;
+   padding:0;
+   text-indent:-9999px;
+   width:20px;
+   height:20px;
+}
+.third-effect .mask {
+   opacity: 0;
+   overflow:visible;
+   border:125px solid rgba(0,0,0,0.7);
+   box-sizing:border-box;
+   transition: all 0.4s ease-in-out;
+}
+
+.third-effect a.info {
+   position:relative;
+   top:-10px; /* Center the link */
+   opacity: 0;
+   transition: opacity 0.5s 0s ease-in-out;
+}
+
+.third-effect:hover .mask {
+   opacity: 1;
+   border:125px solid rgba(0,0,0,0.7);
+}
+
+.third-effect:hover a.info {
+   opacity:1;
+   transition-delay: 0.3s;
+}
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  padding: 10px;
+  color: #fff;
+  height:;
+}
+.element-item img {
+    width:100%;
+	height: 250px;
+	}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+
+/*========== 7. FAQ ==============*/
+
+.faq p {
+	margin-bottom:25px;
+}
+
+/*==========8. FOOTER ==============*/
+
+
+.footercta {
+	padding: 60px 15px;
+	color: #FFF;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+	background-color: #6883cc;
+	background-image:url("../images/pic2.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.footerlinks {
+	text-align:center;
+}
+.footerlinks a {
+	text-align:center;
+	padding:0 5px;
+	display:inline-block;
+	padding-bottom: 15px;
+}
+/* ---------------------------------------------- /*
+ * Contact Form
+/* ---------------------------------------------- */
+.contact-form .form-control {
+    margin-bottom: 20px;
+	border:1px solid #cbcbcb;
+}
+
+.contact-form textarea.form-control {
+    height: 205px;
+}
+/* Inputs styles
+------------------------------------------------- */
+
+.form-control {
+    border: 2px solid #93bdd8;
+    border: 0;
+     -webkit-box-shadow: none;
+             box-shadow: none;
+
+}
+
+.form-control:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+/* Default button style
+------------------------------------------------- */
+
+.btn-contact {
+    background: #fff;
+    border: 0;
+    width: 100%;
+    color: #949494;
+	transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; -webkit-transition: all 0.3s linear;
+}
+
+.btn-contact:hover, 
+.btn-contact:focus, 
+.btn-contact:active, 
+.btn-contact.active, 
+.open .dropdown-toggle.btn-contact {
+    color: #000;
+    background:#fff;
+	border:1px solid #000;
+	transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; -webkit-transition: all 0.3s linear;
+}
+
+.btn-contact:active {
+    padding: 12px 10px 8px;
+    box-shadow: 0 2px 0 #3D97BD;
+}
+
+.btn-contact:focus { 
+    outline: none !important; 
+}
+
+.btn-default {
+    background: #fff;
+    border: 0;
+	border-radius:0;
+    color: #949494;
+	margin:7px;
+}
+
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active, 
+.btn-default.active, 
+.open .dropdown-toggle.btn-default {
+    color: #000;
+	background:#fff;
+	border:1px solid #000;
+}
+
+.btn-default:active {
+    	border:1px solid #000;
+}
+.btn-default:focus { 
+    outline: none !important; 
+}
+/* SOCIAL ICONS */
+.social-icon {
+	width:48px;
+	height:48px;
+	opacity:0.3;
+	-webkit-transition: all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	-o-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+.social-icon:hover {
+    opacity:0.7;
+	-webkit-transform: scale(1.2);
+	transform:scale(1.2);
+	-o-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+}
+.apple {
+    background: url(../images/social/apple/apple-48-black.png);
+}
+.blogger {
+    background: url(../images/social/blogger/blogger-48-black.png);
+}
+.delicious {
+    background: url(../images/social/delicious/delicious-48-black.png);
+}
+.deviantart {
+    background: url(../images/social/deviantart/deviantart-48-black.png);
+}
+.digg {
+    background: url(../images/social/digg/digg-48-black.png);
+}
+.dribbble {
+    background: url(../images/social/dribbble/dribbble-48-black.png);
+}
+.dropbox {
+    background: url(../images/social/dropbox/dropbox-48-black.png);
+}
+.facebook {
+    background: url(../images/social/facebook/facebook-48-black.png);
+}
+.github {
+    background: url(../images/social/github/github-48-black.png);
+}
+.instagram {
+    background: url(../images/social/instagram/instagram-48-black.png);
+}
+.rss {
+    background: url(../images/social/rss/rss-48-black.png);
+}
+.skype {
+    background: url(../images/social/skype/skype-48-black.png);
+}
+.tumblr {
+    background: url(../images/social/tumblr/tumblr-48-black.png);
+}
+.twitter {
+    background: url(../images/social/twitter/twitter-48-black.png);
+}
+.youtube {
+    background: url(../images/social/youtube/youtube-48-black.png);
+}
+
+/*==========9. CUSTOM MEDIA QUERIES==============*/
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 991px) {
+ h1 {
+font-size: 35px;
+line-height: 50px;
+margin: 15px 0;
+}
+ h2 {
+font-size: 35px;
+}
+ .testimonials [class*="col-"]:not(:first-child) {
+ margin-top: 40px;
+}
+ .planpricing [class*="col-"]:not(:first-child) {
+ margin-top: 30px;
+}
+ .breath {
+margin: 30px auto;
+}
+}
+ @media (max-width: 767px) {
+ h1 {
+font-size: 30px;
+line-height: 40px;
+}
+ h2 {
+font-size: 30px;
+line-height: 40px;
+}
+ .subscribe [class*="col-"]:not(:first-child) {
+ margin-top: 30px;
+}
+ .masthead {
+padding: 40px 15px;
+}
+}
+ @media (max-width: 480px) {
+	 /*Media Queries for smaller devices*/
+	 .masthead {
+	background-attachment: scroll;
+}
+
+}
