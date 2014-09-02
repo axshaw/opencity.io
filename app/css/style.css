@@ -1,9 +1,9 @@
-/* 
-    TITEL       : Eazy - Landing Page 
+/*
+    TITEL       : Eazy - Landing Page
     CREATED     : August 7, 2014
     AUTHOR      : themeshuttle, agez
     DESCRIPTION : Simple Business / Agency / Portfolio / Designer Landing Page - Free Weekly Updates!
-       
+
 */
 @charset "utf-8";
 
@@ -14,9 +14,9 @@ body{
 	height:100%;
 	margin:0;
 	padding:0;
-	color:#94a3a8;
+	color:#2E2F30;
 	}
-	
+
 strong,b{
 	font-weight:600;
 	}
@@ -25,8 +25,8 @@ h1{font-size:50px;line-height:60px;margin:25px 0;}
 h2{font-size:40px;font-weight:600;margin:15px 0;}
 h3{font-size:20px;margin:10px 0;font-weight:600;}
 h4{font-size:20px;margin:10px 0;}
-h5{font-size:28px;font-weight:600;margin:15px 0;color:#384047;}
-h6{font-size:16px;font-weight:600;margin:10px 0;color:#384047;}
+h5{font-size:28px;font-weight:600;margin:15px 0;}
+h6{font-size:16px;font-weight:600;margin:10px 0;}
 
 a{color:#94a3a8;}
 a:hover,a:focus{color:#94a3a8;text-decoration:none;}
@@ -38,7 +38,11 @@ i {
 	-webkit-box-shadow:none;
 	box-shadow:none;border:0;
 	}
-	
+
+.white {
+  colour: #ffffff;
+}
+
 .input-lg{height:55px;}
 
 .btn-lg,.btn-group-lg>.btn{
@@ -56,7 +60,7 @@ i {
 	text-align:center;
 	text-shadow:0 1px 0 rgba(0,0,0,.1);
 	background-color:#6883cc;
-	background-image:url("../images/pic1.jpg");
+	background-image:url("../images/pic1OP.jpg");
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-attachment:fixed;
@@ -74,9 +78,12 @@ i {
 	}
 
 .logo {
-	padding: 45px 0;
+	padding: 125px 0;
 	text-align:center;
-	
+  background-image: url('/images/OClogo-purpleLGE.jpeg');
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+
 }
 .logo h1 {
     font-size:128px;
@@ -191,12 +198,14 @@ to {
 	text-align:center;
 	margin-top:60px;
 	margin-bottom:30px;
+
 }
 .section-title h2 {
 	color:#384047;
 }
 .section-title h4 {
 	color:#94a3a8;
+  line-height:1.5;
 }
 .heroimg img, .clientlogo img {
 	max-width:100%;
@@ -302,8 +311,8 @@ background-image: -moz-linear-gradient(left, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.000
 background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.0001) 100%);
 background-repeat: repeat-x;
 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-background: none !important; 
-filter: progid:none !important; 
+background: none !important;
+filter: progid:none !important;
 }
 .carousel-control.right {
 background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0,0,0,0.0001)), to(rgba(0,0,0,0.5)));
@@ -312,16 +321,16 @@ background-image: -moz-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.
 background-image: linear-gradient(to right, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.5) 100%);
 background-repeat: repeat-x;
 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-background: none !important; 
-filter: progid:none !important; 
+background: none !important;
+filter: progid:none !important;
 }
 .carousel-control:hover, .carousel-control:focus {
 opacity: 1;
 filter: alpha(opacity=100);
 color:black;
 }
-.carousel-control {   
-	height:160px; 
+.carousel-control {
+	height:160px;
 	color:grey;
 }
 
@@ -475,7 +484,7 @@ color:black;
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
 	background-color: #6883cc;
-	background-image:url("../images/pic2.jpg");
+	background-image:url("../images/pic2OP.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -530,10 +539,10 @@ color:black;
 	transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; -webkit-transition: all 0.3s linear;
 }
 
-.btn-contact:hover, 
-.btn-contact:focus, 
-.btn-contact:active, 
-.btn-contact.active, 
+.btn-contact:hover,
+.btn-contact:focus,
+.btn-contact:active,
+.btn-contact.active,
 .open .dropdown-toggle.btn-contact {
     color: #000;
     background:#fff;
@@ -546,8 +555,8 @@ color:black;
     box-shadow: 0 2px 0 #3D97BD;
 }
 
-.btn-contact:focus { 
-    outline: none !important; 
+.btn-contact:focus {
+    outline: none !important;
 }
 
 .btn-default {
@@ -558,10 +567,10 @@ color:black;
 	margin:7px;
 }
 
-.btn-default:hover, 
-.btn-default:focus, 
-.btn-default:active, 
-.btn-default.active, 
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
 .open .dropdown-toggle.btn-default {
     color: #000;
 	background:#fff;
@@ -571,8 +580,8 @@ color:black;
 .btn-default:active {
     	border:1px solid #000;
 }
-.btn-default:focus { 
-    outline: none !important; 
+.btn-default:focus {
+    outline: none !important;
 }
 /* SOCIAL ICONS */
 .social-icon {

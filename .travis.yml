@@ -1,6 +1,8 @@
 language: node_js
 node_js:
-  - '0.10'
+- '0.10'
 before_script:
-  - 'npm install -g bower grunt-cli'
-  - 'bower install'
+- npm install -g bower grunt-cli
+- bower install
+FTP_USER=opencityio:
+  secure: sSCQ9ALZ5fF0yHFNcBQopIVkyMV4rnUAjiqo5MJAQNncWydy/MGSygn0GFwdGFSXzWjcfl+O/KAY3jSjqs13pPdQ6l8aqWFNG/LapsT8fsedAj227/kSlu1QydeE+HqycQqPKoTQEa9jyaNigy8QTww2ifBTMWfxn3nlWIncgWk=
